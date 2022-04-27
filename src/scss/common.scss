@@ -1,9 +1,7 @@
 // Заголовки, общие БЄМ блоки и проче...
 .social {
 	font-size: 22px;
-	// background-color: #4E76A2;
 	border-radius: 50%;
-	// padding: 8px;
 	color: #fff;
 	transition: opacity 0.3s ease 0s;
 	color: #013A7A;
@@ -20,4 +18,44 @@
 .form__container {
 	max-width: 1440px;
 	margin-top: -140px;
+}
+
+.title {
+	font-weight: 700;
+	@include adaptiveValue("font-size", 30, 26);
+	line-height: 37px;
+	line-height: math.div(37, 30);
+	text-align: center;
+	color: $whiteColor;
+}
+
+.subtitle {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 21px;
+	line-height: math.div(24, 17);
+	text-align: center;
+	color: #78DDFF;
+}
+
+.hotelhit__slide-button {
+	height: rem(30);
+	display: flex;
+	align-items: center;
+	width: rem(118);
+	justify-content: center;
+	margin: auto;
+	padding: 12px 15px;
+	background: linear-gradient(0deg, #FFF200, #FFF200);
+	box-shadow: 0px 0px 15px #FFF201;
+	border-radius: 110px;
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	color: #313131;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		box-shadow: 0px 0px 20px #FFF201;
+	}
 }

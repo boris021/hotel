@@ -26,7 +26,26 @@
 		z-index: 10;
 
 		@media (max-width:$mobile) {
-			display: none;
+			margin-top: 30px;
+			border-top: 1px solid #ededed;
+			border-bottom: 1px solid #ededed;
+			padding: 13px 0;
+			font-size: 26px;
+		}
+
+		&-button {
+			margin-top: 20px;
+			background: #013A7A;
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+			border-radius: 100px;
+			color: $whiteColor;
+			padding: 20px 25px;
+			font-size: 15px;
+
+			@media (min-width:$mobile) {
+				display: none;
+			}
+
 		}
 	}
 
