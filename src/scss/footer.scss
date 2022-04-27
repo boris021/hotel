@@ -1,3 +1,29 @@
 //====================================================================================================
+.footer {
+	background: #014C9C;
+	@include adaptiveValue("padding-top", 35, 20);
+	@include adaptiveValue("padding-bottom", 35, 20);
+
+	// .footer__body
+	&__body {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	// .footer__actions
+	&__actions {
+		margin-bottom: 20px;
+
+		a {
+			color: $whiteColor;
+		}
+	}
+
+	// .footer__phone
+	&__phone {
+		color: $whiteColor;
+	}
+}
 
 //====================================================================================================

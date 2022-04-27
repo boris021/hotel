@@ -3,12 +3,21 @@
 
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
+	padding: 23px 60px;
+	background: linear-gradient(0deg, #FFF200, #FFF200);
+	box-shadow: 0px 7px 35px #FFF200;
+	border-radius: 110px;
+	transition: box-shadow 0.3s ease 0s;
+	font-weight: 600;
+
+	@media (max-width:$tablet) {
+		padding: 15px 30px;
+	}
+
 	@media (any-hover: hover) {
 		&:hover {
+			box-shadow: 0px 7px 35px #fff200c0;
+
 		}
-	}
-	&._fw {
-		width: 100%;
 	}
 }

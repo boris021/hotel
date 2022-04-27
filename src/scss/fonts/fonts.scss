@@ -5,3 +5,11 @@
 	font-weight: 400;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: Banff;
+	font-display: swap;
+	src: url("../fonts/ofont.ru_Banff.woff2") format("woff2"), url("../fonts/ofont.ru_Banff.woff") format("woff");
+	font-weight: 400;
+	font-style: regular;
+}

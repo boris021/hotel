@@ -1,1 +1,23 @@
 // Заголовки, общие БЄМ блоки и проче...
+.social {
+	font-size: 22px;
+	// background-color: #4E76A2;
+	border-radius: 50%;
+	// padding: 8px;
+	color: #fff;
+	transition: opacity 0.3s ease 0s;
+	color: #013A7A;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:not(:last-child) {
+		margin-right: 15px;
+	}
+}
+
+.form__container {
+	max-width: 1440px;
+	margin-top: -140px;
+}

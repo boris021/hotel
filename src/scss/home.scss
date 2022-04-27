@@ -1,3 +1,133 @@
 //====================================================================================================
+.main {
+	position: relative;
+	height: rem(820);
+
+	@media (max-width:$tablet) {
+		height: 400px;
+	}
+
+	// .main__container
+	&__container {}
+
+	// .main__body
+	&__body {
+		z-index: 2;
+	}
+
+	// .main__title
+	&__title {
+		font-family: 'Banff';
+		@include adaptiveValue("font-size", 60, 40);
+		line-height: math.div(59, 60);
+		color: #FFFFFF;
+		position: relative;
+		@include adaptiveValue("padding-top", 180, 90);
+		@include adaptiveValue("padding-bottom", 296, 60);
+		max-width: rem(850);
+		z-index: 2;
+	}
+
+	// .main__form
+	&__form {
+		position: relative;
+		z-index: 2;
+		background: #013A7A;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		@include adaptiveValue("padding-top", 40, 20);
+		@include adaptiveValue("padding-right", 120, 20);
+		@include adaptiveValue("padding-bottom", 40, 20);
+		@include adaptiveValue("padding-left", 120, 20);
+	}
+
+	// .main__group
+	&__group {
+		min-width: 17%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@media (max-width:$tablet) {
+			flex: 1 1 auto;
+			margin-right: 20px;
+
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+
+		@media (max-width:$mobile) {
+			flex: 1 1 100%;
+			margin-right: 0;
+		}
+
+
+	}
+
+	// .main__label
+	&__label {
+		font-weight: 500;
+		font-size: 15px;
+		color: $whiteColor;
+		margin-bottom: 10px;
+		display: block;
+		margin-left: 2px;
+	}
+
+	// .main__input
+	&__input {
+		background: rgba(255, 255, 255, 0.3);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		border: none;
+		height: rem(60);
+		color: #FFFFFF;
+		width: 100%;
+
+		@media (max-width:$mobile) {
+			height: rem(40);
+			border-radius: 5px;
+		}
+	}
+
+	// .main__button
+	&__button {
+		display: block;
+		margin: auto;
+
+	}
+
+	// .main__image-ibg
+	&__image-ibg {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+::placeholder {
+	color: #fff;
+}
+
+.form-main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.input {}
+
+.form {}
+
+.button {}
 
 //====================================================================================================
