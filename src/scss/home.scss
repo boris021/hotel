@@ -36,9 +36,9 @@
 		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
 		@include adaptiveValue("padding-top", 40, 20);
-		@include adaptiveValue("padding-right", 120, 20);
+		@include adaptiveValue("padding-right", 100, 20);
 		@include adaptiveValue("padding-bottom", 40, 20);
-		@include adaptiveValue("padding-left", 120, 20);
+		@include adaptiveValue("padding-left", 100, 20);
 	}
 
 	// .main__group
@@ -121,7 +121,11 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 20px;
-	flex-wrap: wrap;
+
+	// flex-wrap: wrap;
+	@media (max-width:$tablet) {
+		flex-wrap: wrap;
+	}
 }
 
 // advantage ===========================================================================================
@@ -245,6 +249,10 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
+		@media (max-width:$mobile) {
+			justify-content: center;
+		}
 	}
 
 	// .hotelhit__body-item
@@ -254,7 +262,13 @@
 		min-height: 270px;
 		border-radius: 10px;
 		margin-bottom: 30px;
+		box-shadow: 0px 4px 20px #78DDFF;
+		border-radius: 10px;
+		transition: box-shadow 0.3s ease 0s;
 
+		&:hover {
+			box-shadow: 0px 4px 10px #78DDFF;
+		}
 
 		&__image {
 			position: absolute;
@@ -279,8 +293,9 @@
 		left: 0;
 		z-index: 2;
 		background: url(../img/hotelhit/plank-1.svg) center bottom no-repeat;
-
 	}
+
+
 
 	// .hotelhit__body-content-text
 	&__body-content-text {
@@ -322,5 +337,12 @@
 		width: 118px;
 		margin: auto;
 		text-align: center;
+		z-index: 3;
+		position: relative;
+		transition: box-shadow 0.3s ease 0s;
+
+		&:hover {
+			box-shadow: 0px 7px 25px #FFF201;
+		}
 	}
 }
