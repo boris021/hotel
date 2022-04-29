@@ -258,13 +258,22 @@
 	// .hotelhit__body-item
 	&__body-item {
 		position: relative;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: flex-end;
 		flex: 0 0 rem(270);
 		min-height: 270px;
 		border-radius: 10px;
 		margin-bottom: 30px;
+		margin-right: 20px;
 		box-shadow: 0px 4px 20px #78DDFF;
 		border-radius: 10px;
 		transition: box-shadow 0.3s ease 0s;
+
+		@media (max-width:$mobile) {
+			margin: 0 10px 20px 0;
+		}
 
 		&:hover {
 			box-shadow: 0px 4px 10px #78DDFF;
@@ -285,22 +294,25 @@
 
 	// .hotelhit__body-content
 	&__body-content {
-		content: '';
-		position: absolute;
+		position: relative;
 		width: 100%;
 		height: 104px;
-		bottom: 0;
-		left: 0;
-		z-index: 2;
-		background: url(../img/hotelhit/plank-1.svg) center bottom no-repeat;
+
+		&__image {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 104px;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+		}
 	}
-
-
 
 	// .hotelhit__body-content-text
 	&__body-content-text {
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 
 		&::before {
 			content: '';
@@ -308,7 +320,8 @@
 			width: 100%;
 			height: 100%;
 			top: 0;
-			left: 10px;
+			left: 0;
+			transform: translate(10px, 0);
 			background: url(../img/hotelhit/sun.png) left bottom no-repeat;
 		}
 	}
