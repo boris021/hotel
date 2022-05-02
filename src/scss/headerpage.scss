@@ -1,8 +1,16 @@
 .headerpage {
 	background-color: rgba(1, 76, 156, 1);
-	color: $whiteColor;
+	// color: $whiteColor;
 
 	&__social {
+		color: $whiteColor;
+
+		@media (max-width:$tablet) {
+			color: $blueColor;
+		}
+	}
+
+	&__phone {
 		color: $whiteColor;
 	}
 }
