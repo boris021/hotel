@@ -60,7 +60,8 @@
 	}
 }
 
-.page-title {
+.page-title,
+.subtitlepage {
 	font-weight: 700;
 	@include adaptiveValue("font-size", 30, 22);
 	line-height: math.div(37, 30);
@@ -68,3 +69,5 @@
 	@include adaptiveValue("padding-top", 40, 20);
 	@include adaptiveValue("padding-bottom", 40, 20);
 }
+
+.subtitlepage {}

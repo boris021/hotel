@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Алаколь Резорт"})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_headerpage.html',{})
+		<main class="page">
+
+			<section class="hotel">
+				<div class="hotel__container">
+					<h2 class="hotel__title page-title">Алаколь Резорт</h2>
+					<div class="hotel__maps">
+						<img src="@img/hotel/map.png" alt="map">
+						<span class="hotel__adress">Акши, Алматинская обл.,Казахстан</span>
+					</div>
+					<div data-gallery class="angry-grid">
+						<a id="item-0" href="@img/hotel/hotel-0.jpg" class="gallery__hotel">
+							<img id="item-0" src="@img/hotel/hotel-0.jpg" class="gallery__hotelprew">
+						</a>
+
+						<a id="item-1" href="@img/hotel/hotel-2.jpg" class="gallery__hotel">
+							<img id="item-1" src="@img/hotel/hotel-2.jpg" class="gallery__hotelprew">
+						</a>
+
+						<a id="item-2" href="@img/hotel/hotel-3.jpg" class="gallery__hotel">
+							<img id="item-2" src="@img/hotel/hotel-3.jpg" class="gallery__hotelprew">
+						</a>
+
+						<a id="item-3" href="@img/hotel/hotel-4.jpg" class="gallery__hotel">
+							<img id="item-3" src="@img/hotel/hotel-4.jpg" class="gallery__hotelprew">
+						</a>
+
+
+						<a id="item-4" href="@img/hotel/hotel-5.jpg" class="gallery__hotel">
+							<img id="item-4" src="@img/hotel/hotel-5.jpg" class="gallery__hotelprew">
+						</a>
+
+					</div>
+					<div class="hotel__content">
+						<div class="hotel__left">
+							<h3 class="hotel__subtitlepage subtitlepage">Алаколь Резорт</h3>
+							<div class="hotel__left-amenities">
+								<span>4 гостя</span>
+								<span>2 спальни</span>
+								<span>3 кровати</span>
+								<span>1 ванная</span>
+							</div>
+							<div class="hotel__left-text">
+								<p>Эта просторная вилла Tree Villa с прекрасным видом на кофейную плантацию со своей большой
+									веранды и поистине очень расслабляющий опыт.
+								</p>
+								<p>Современные удобства включают телевизор, DVD, спутниковый ресивер, мини-холодильник,
+									электронный сейф, кофеварка/чайник и две ванные комнаты. Надлежащее освещение и вентиляция
+									были обеспечены экранами от насекомых на всех отверстиях. Подход с наклонной пешеходной
+									дорожки с перилами, обеспечивая легкий доступ даже для пожилых.</p>
+							</div>
+							<h3 class="hotel__subtitlepage subtitlepage">Какие удобства вас ждут</h3>
+							<div class="hotel__left-advantage">
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/wifi.png" alt="wifi">
+									<span class="hotel__left-advantage-item-text">Wi-Fi</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/car.png" alt="car">
+									<span class="hotel__left-advantage-item-text">Бесплатная парковка на территории</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/tv.png" alt="tv">
+									<span class="hotel__left-advantage-item-text">Телевизор, кабельное ТВ</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/water.png" alt="water">
+									<span class="hotel__left-advantage-item-text">Горячая вода в номере</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/fridge 1.png" alt="fridge">
+									<span class="hotel__left-advantage-item-text">Холодильник</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/hair-dryer.png" alt="wifi">
+									<span class="hotel__left-advantage-item-text">Фен</span>
+								</div>
+							</div>
+							<h3 class="hotel__subtitlepage subtitlepage">Важная информация</h3>
+							<div class="hotel__left-advantage">
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/clock.png" alt="clock">
+									<span class="hotel__left-advantage-item-text">Прибытие в 12:00</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/clock.png" alt="clock">
+									<span class="hotel__left-advantage-item-text">Выезд в 12:00</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/pawprint.png" alt="pawprint">
+									<span class="hotel__left-advantage-item-text">Нельзя с питомцами</span>
+								</div>
+								<div class="hotel__left-advantage-item">
+									<img src="@img/hotel/dont-smoke.png" alt="smoke">
+									<span class="hotel__left-advantage-item-text">Курение в номере запрещено</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="hotel__right">
+							<form action="" class="hotel__right-form">
+								<h3 class="hotel__subtitlepage subtitlepage">Алаколь Резорт</h3>
+								<div class="form__body">
+									<div class="group__form">
+										<label for="date" class="group__form-label">Прибытие</label>
+										<input type="date" data-error="Ошибка" class="input group__form-input">
+									</div>
+									<div class="group__form">
+										<label for="date" class="group__form-label">Выезд</label>
+										<input type="date" data-error="Ошибка" class="input group__form-input">
+									</div>
+									<div class="group__form">
+										<label for="tel" class="group__form-label">Где вы будете спать</label>
+										<select name="form[]" class="form input group__form-input">
+											<option value="1" selected>1 двуспальная кровать</option>
+											<option value="2">2 двухспальная кровать</option>
+										</select>
+									</div>
+									<div class="group__form">
+										<label for="number" class="group__form-label">Кол-во гостей</label>
+										<select name="form[]" class="form input group__form-input">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+									<div class="group__form">
+										<label for="name" class="group__form-label">Имя</label>
+										<input type="name" data-error="Ошибка" placeholder="Ербол"
+											class="input group__form-input">
+									</div>
+									<div class="group__form">
+										<label for="tel" class="group__form-label">Телефон</label>
+										<input type="tel" data-error="Ошибка" placeholder="+7 700 000 00 00"
+											class="input group__form-input">
+									</div>
+								</div>
+								<div class="hotel__right-advanteger">
+									<div class="hotel__right-advanteger-item">
+										<img src="@img/hotel/sun.png" alt="">
+										<span class="hotel__right-advanteger-text">База отдыха, Пляжный</span>
+									</div>
+									<div class="hotel__right-advanteger-item">
+										<img src="@img/hotel/prise.png" alt="">
+										<span class="hotel__right-advanteger-text">От 8000 тг/ночь</span>
+									</div>
+									<div class="hotel__right-advanteger-item">
+										<img src="@img/hotel/map.png" alt="">
+										<span class="hotel__right-advanteger-text">Акши, Алматинская обл.,Казахстан</span>
+									</div>
+								</div>
+								<a href="" class="hotel__button button">Забронировать</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
