@@ -1214,6 +1214,15 @@ body::after {
   transition: color 0.3s ease 0s;
   position: relative;
   font-weight: 500;
+  color: #313131;
+}
+
+.menu__item-page {
+  color: #fff;
+}
+
+.menu__item-page:hover {
+  color: #fff;
 }
 
 .menu__item:not(:last-child) {
@@ -4591,6 +4600,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .menu__item-page {
+    color: #313131;
   }
 
   .menu__item {

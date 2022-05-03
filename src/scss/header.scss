@@ -94,9 +94,6 @@
 				content: '';
 				position: absolute;
 				position: fixed;
-				// background-color: #000;
-				// background: rgba(255, 255, 255, 0);
-				// backdrop-filter: blur(5px);
 				height: 70px;
 				width: 100%;
 				top: 0px;
@@ -125,9 +122,21 @@
 		transition: color 0.3s ease 0s;
 		position: relative;
 		font-weight: 500;
+		color: $mainColor;
+
+		&-page {
+			color: $whiteColor;
+
+			@media (max-width:$tablet) {
+				color: $mainColor;
+			}
+
+			&:hover {
+				color: $whiteColor;
+			}
+		}
 
 		@media (max-width:$tablet) {
-			// margin-top: 20px;
 			margin-bottom: 30px;
 			font-size: 20px;
 
@@ -143,7 +152,6 @@
 
 		&:hover {
 			color: #000000;
-
 		}
 
 		&::before {
