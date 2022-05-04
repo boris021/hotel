@@ -54,9 +54,14 @@
 			align-items: center;
 			width: 0;
 			height: 0;
-			border-left: 8px solid transparent;
-			border-right: 8px solid transparent;
-			// border-top: 10px solid #fff;
+			// border-left: 8px solid transparent;
+			// border-right: 8px solid transparent;
+			// border-left: 8px solid red;
+			// border-right: 8px solid red;
+			// border-top: 10px solid red;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 7px solid $mainColor;
 
 			._select-open & {
 				transform: rotate(-180deg);

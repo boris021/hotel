@@ -123,16 +123,15 @@
 		margin-top: 10px;
 		position: relative;
 
-		&:not(:last-child) {
-			::before {
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 1px;
-				bottom: -20px;
-				left: 0;
-				background-color: #949494;
-			}
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: -20px;
+			left: 0;
+			background-color: #949494;
+
 		}
 	}
 
@@ -414,3 +413,101 @@
 	grid-row-end: 3;
 	grid-column-end: 3;
 }
+
+// feedback ========================================================================================================================================================
+.feedback {
+	padding-top: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	// .feedback__container
+	&__container {}
+
+	// .feedback__heading
+	&__heading {
+		display: flex;
+		align-items: center;
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		@include adaptiveValue("font-size", 30, 26);
+		margin-left: 10px;
+	}
+
+	// .feedback__body
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	// .feedback__left
+	&__left {
+		flex: 0 0 43%;
+		margin: 0 0px 45px 0;
+
+		@media (max-width:$tablet) {
+			flex: 1 1 auto;
+			margin-bottom: 30px;
+		}
+	}
+
+	// .feedback__left-avatar
+	&__left-avatar {
+		display: flex;
+		align-items: center;
+	}
+
+	// .feedback__left-avatar-img
+	&__left-avatar-img {
+		width: rem(50);
+		height: rem(50);
+		margin-right: 8px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	// .feedback__left-avatar-content
+	&__left-avatar-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .feedback__left-avatar-name
+	&__left-avatar-name {
+		font-weight: 700;
+		font-size: 15px;
+		color: #313131;
+		margin-bottom: 3px;
+	}
+
+	// .feedback__left-avatar-date
+	&__left-avatar-date {
+		font-weight: 400;
+		font-size: 13px;
+		color: #313131;
+	}
+
+	// .feedback__left-text
+	&__left-text {
+		margin-top: 12px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(16, 14);
+		color: #000000;
+	}
+}
+
+.hotelpage {
+
+	// .hotelpage__title
+	&__title {}
+}
+
+.page-title {}
