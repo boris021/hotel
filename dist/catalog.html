@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{"title":"Выберите ваш отель"})
+
+<head>
+	<title>Выберите ваш отель</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220504140725">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_headerpage.html',{})
+		<header class="header headerpage">
+			<div class="header__container">
+				<div class="header__body">
+					<div data-da=".menu__body,768,3" class="headerpage__actions header__actions ">
+						<a href="" class="header__social headerpage__social social _icon-whatsapp"></a>
+						<a href="" class="header__social headerpage__social social _icon-telegram"></a>
+						<a href="" class="header__social headerpage__social social _icon-instagram"></a>
+					</div>
+					<a data-da=".menu__body,768,2" href="#" class="button header__actions-button _icon-whatsapp">Связаться с
+						менеджером</a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu icon-menu-page"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item-page"><a href="" class="menu__link">Главная</a></li>
+								<li class="menu__item menu__item-page"><a href="" class="menu__link">Отели</a></li>
+								<li class="menu__item menu__item-page"><a href="" class="menu__link">О нас</a></li>
+								<li class="menu__item menu__item-page"><a href="" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="tel:+77055451833" class="header__phone headerpage__phone  _icon-phone">+7 705 545 18 33</a>
+				</div>
+			</div>
+		</header>
 		<main class="page">
 
 			<section class="cataloghotel">
@@ -13,7 +47,7 @@
 					<div class="cataloghotel__body">
 						<div class="cataloghotel__card">
 							<div class="cataloghotel__images">
-								<img src="@img/hotel/hotel-1.jpg" alt="cataloghotel">
+								<img src="img/hotel/hotel-1.jpg" alt="cataloghotel">
 							</div>
 							<div class="cataloghotel__content">
 								<h3 class="cataloghotel__content-title">Алаколь Резорт</h3>
@@ -51,7 +85,7 @@
 						</div>
 						<div class="cataloghotel__card">
 							<div class="cataloghotel__images">
-								<img src="@img/hotel/hotel-1.jpg" alt="cataloghotel">
+								<img src="img/hotel/hotel-1.jpg" alt="cataloghotel">
 							</div>
 							<div class="cataloghotel__content">
 								<h3 class="cataloghotel__content-title">Алаколь Резорт</h3>
@@ -89,7 +123,7 @@
 						</div>
 						<div class="cataloghotel__card">
 							<div class="cataloghotel__images">
-								<img src="@img/hotel/hotel-1.jpg" alt="cataloghotel">
+								<img src="img/hotel/hotel-1.jpg" alt="cataloghotel">
 							</div>
 							<div class="cataloghotel__content">
 								<h3 class="cataloghotel__content-title">Алаколь Резорт</h3>
@@ -127,7 +161,7 @@
 						</div>
 						<div class="cataloghotel__card">
 							<div class="cataloghotel__images">
-								<img src="@img/hotel/hotel-1.jpg" alt="cataloghotel">
+								<img src="img/hotel/hotel-1.jpg" alt="cataloghotel">
 							</div>
 							<div class="cataloghotel__content">
 								<h3 class="cataloghotel__content-title">Алаколь Резорт</h3>
@@ -165,7 +199,7 @@
 						</div>
 						<div class="cataloghotel__card">
 							<div class="cataloghotel__images">
-								<img src="@img/hotel/hotel-1.jpg" alt="cataloghotel">
+								<img src="img/hotel/hotel-1.jpg" alt="cataloghotel">
 							</div>
 							<div class="cataloghotel__content">
 								<h3 class="cataloghotel__content-title">Алаколь Резорт</h3>
@@ -203,7 +237,7 @@
 						</div>
 						<div class="cataloghotel__card">
 							<div class="cataloghotel__images">
-								<img src="@img/hotel/hotel-1.jpg" alt="cataloghotel">
+								<img src="img/hotel/hotel-1.jpg" alt="cataloghotel">
 							</div>
 							<div class="cataloghotel__content">
 								<h3 class="cataloghotel__content-title">Алаколь Резорт</h3>
@@ -256,10 +290,32 @@
 			</section>
 
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__actions">
+						<a href="" class="footer__social social _icon-whatsapp"></a>
+						<a href="" class="footer__social social _icon-telegram"></a>
+						<a href="" class="footer__social social _icon-instagram"></a>
+					</div>
+					<a href="tel:+77055451833" class="footer__phone header__phone _icon-phone">+7 705 545 18 33</a>
+				</div>
+			</div>
+		</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220504140725"></script>
 </body>
 
 </html>

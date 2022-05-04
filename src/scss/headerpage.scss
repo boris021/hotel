@@ -14,9 +14,3 @@
 		color: $whiteColor;
 	}
 }
-
-.header__actions-button {
-	@media (min-width:$mobile) {
-		display: none;
-	}
-}

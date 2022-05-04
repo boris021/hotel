@@ -1,0 +1,237 @@
+.cataloghotel {
+	margin-top: 90px;
+
+	// .pagehotel__container
+	&__container {}
+
+	// .pagehotel__tile
+	&__title {
+		text-align: center;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: rgba(49, 49, 49, 0.71);
+			bottom: 10px;
+			left: 0;
+		}
+	}
+
+	// .pagehotel__body
+	&__body {
+		@include adaptiveValue("margin-top", 44, 20);
+	}
+
+	// .pagehotel__card
+	&__card {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		position: relative;
+		@include adaptiveValue("margin-bottom", 40, 20);
+		@include adaptiveValue("padding-bottom", 40, 20);
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: rgba(49, 49, 49, 0.71);
+			bottom: 0px;
+			left: 0;
+		}
+	}
+
+	// .pagehotel__images
+	&__images {
+		display: flex;
+		flex: 1 1 45%;
+		height: rem(340);
+		margin-right: 30px;
+		filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.35));
+		border-radius: 10px;
+
+		@media (max-width:$tablet) {
+			flex: 1 1 100%;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		& img {
+			border-radius: 10px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .pagehotel__content
+	&__content {
+		flex: 1 1 50%;
+
+		@media (max-width:$tablet) {
+			flex: 1 1 100%;
+			margin: 0 10px;
+		}
+	}
+
+	// .pagehotel__content-title
+	&__content-title {
+		font-weight: 700;
+		@include adaptiveValue("font-size", 22, 18);
+		color: #000000;
+		position: relative;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 10%;
+			height: 1px;
+			background-color: rgba(49, 49, 49, 0.71);
+			bottom: 0px;
+			left: 0;
+		}
+	}
+
+	// .pagehotel__content-list
+	&__content-list {
+		margin-bottom: 20px;
+		position: relative;
+		padding-bottom: 15px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 10%;
+			height: 1px;
+			background-color: rgba(49, 49, 49, 0.71);
+			bottom: 0px;
+			left: 0;
+		}
+	}
+
+	// .pagehotel__content-list-item
+	&__content-list-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// .pagehotel__content-list-item-img
+	&__content-list-item-img {
+		width: rem(20);
+	}
+
+	// .pagehotel__content-list-item-text
+	&__content-list-item-text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: math.div(16, 14);
+		text-align: left;
+		color: #313131;
+		margin-left: 8px;
+	}
+
+	// .pagehotel__content-usability
+	&__content-usability {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: math.div(16, 13);
+		color: #313131;
+		margin-bottom: 15px;
+		position: relative;
+
+		& span {
+			border-right: 1px solid #3131317c;
+			padding: 0 5px 0 7px;
+
+			&:first-child {
+				padding: 0;
+			}
+
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+
+	// .pagehotel__content-usability-1
+	&__content-usability-1 {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: math.div(16, 13);
+		color: #313131;
+		margin-bottom: 10px;
+
+		@media (max-width:$mobile) {
+			margin-bottom: 20px;
+		}
+
+		& span {
+			border-right: 1px solid #3131317c;
+			padding: 0 5px 0 7px;
+
+			&:first-child {
+				padding: 0;
+			}
+
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+
+	// .pagehotel__content-text
+	&__content-text {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: math.div(18, 15);
+		color: #000000;
+	}
+
+	// .pagehotel__button
+	&__button {
+		margin-top: 20px;
+		padding: 14px 30px;
+		font-weight: 700;
+		font-size: 12px;
+		text-align: center;
+	}
+}
+
+/* Ссылки для разбиения на страницы */
+.pagination {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+
+/* Стиль активной/текущей ссылки */
+.pagination a.active {
+	background-color: $blueColor;
+	color: $whiteColor;
+}
+
+/* Добавить серый цвет фона при наведении курсора мыши */
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}

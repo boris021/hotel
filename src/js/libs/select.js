@@ -1,11 +1,21 @@
 // Подключение функционала "Чертогов Фрилансера"
-import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../files/functions.js";
-import { flsModules } from "../files/modules.js";
-import { formValidate } from "../files/forms/forms.js";
+import {
+	isMobile,
+	_slideUp,
+	_slideDown,
+	_slideToggle,
+	FLS
+} from "../files/functions.js";
+import {
+	flsModules
+} from "../files/modules.js";
+import {
+	formValidate
+} from "../files/forms/forms.js";
 
 // Подключение файла стилей
-// Базовые стили поключаются в src/scss/forms.scss
-// Файл базовых стилей src/scss/forms/select.scss
+// Базовые стили поключаются в src / scss / forms.scss
+// Файл базовых стилей src / scss / forms / select.scss
 
 /*
 Документация:
@@ -493,5 +503,3 @@ class SelectConstructor {
 }
 // Запускаем и добавляем в объект модулей
 flsModules.select = new SelectConstructor({});
-
-

@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Пришло время отдохнуть на озере Алаколь!"
-})
+
+<head>
+	<title>Пришло время отдохнуть на озере Алаколь!</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220504140725">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div data-da=".menu__body,768,3" class="header__actions">
+						<a href="" class="header__social social _icon-whatsapp"></a>
+						<a href="" class="header__social social _icon-telegram"></a>
+						<a href="" class="header__social social _icon-instagram"></a>
+					</div>
+					<a data-da=".menu__body,768,2" href="#" class="button header__actions-button _icon-whatsapp">Связаться с
+						менеджером</a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Отели</a></li>
+								<li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+								<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="tel:+77055451833" class="header__phone _icon-phone">+7 705 545 18 33</a>
+				</div>
+			</div>
+		</header>
 		<main class="page">
 
 			<section class="main">
@@ -15,7 +47,7 @@
 						<div class="main__title">Пришло время отдохнуть на озере Алаколь!</div>
 					</div>
 				</div>
-				<div class="main__image-ibg"><img src="@img/main/main-bg.png" alt="main"></div>
+				<div class="main__image-ibg"><img src="img/main/main-bg.png" alt="main"></div>
 			</section>
 
 			<section class="form">
@@ -24,23 +56,19 @@
 						<form action="" class="form-main">
 							<div class="main__group">
 								<label for="name" class="main__label">Ваше имя</label>
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ербол"
-									class="input main__input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ербол" class="input main__input">
 							</div>
 							<div class="main__group">
 								<label for="tel" class="main__label">Ваш телефон</label>
-								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
-									placeholder="+7 700 000 00 00" class="input main__input">
+								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 700 000 00 00" class="input main__input">
 							</div>
 							<div class="main__group">
 								<label for="date" class="main__label">Дата заезда</label>
-								<input autocomplete="off" type="date" name="form[]" data-error="Ошибка"
-									class="input main__input">
+								<input autocomplete="off" type="date" name="form[]" data-error="Ошибка" class="input main__input">
 							</div>
 							<div class="main__group">
 								<label for="date" class="main__label">Дата отъезда</label>
-								<input autocomplete="off" type="date" name="form[]" data-error="Ошибка"
-									class="input main__input">
+								<input autocomplete="off" type="date" name="form[]" data-error="Ошибка" class="input main__input">
 							</div>
 							<div class="main__group">
 								<label for="number" class="main__label ">Количество человек </label>
@@ -62,25 +90,25 @@
 					<div class="advantage__body">
 						<div class="advantage__item">
 							<div class="advantage__item-image">
-								<img src="@img/advantage/advantage-icon1.png" alt="">
+								<img src="img/advantage/advantage-icon1.png" alt="">
 							</div>
 							<div class="advantage__item-title">Выбираете отель и оставляете заявку</div>
 							<div class="advantage__item-icon">
-								<img src="@img/advantage/arrow.svg" alt="">
+								<img src="img/advantage/arrow.svg" alt="">
 							</div>
 						</div>
 						<div class="advantage__item">
 							<div class="advantage__item-image">
-								<img src="@img/advantage/advantage-icon2.png" alt="">
+								<img src="img/advantage/advantage-icon2.png" alt="">
 							</div>
 							<div class="advantage__item-title">Начинаете свое путешествие</div>
 							<div class="advantage__item-icon">
-								<img src="@img/advantage/arrow.svg" alt="">
+								<img src="img/advantage/arrow.svg" alt="">
 							</div>
 						</div>
 						<div class="advantage__item">
 							<div class="advantage__item-image">
-								<img src="@img/advantage/advantage-icon3.png" alt="">
+								<img src="img/advantage/advantage-icon3.png" alt="">
 							</div>
 							<div class="advantage__item-title">Наслаждаетесь отдыхом</div>
 						</div>
@@ -102,11 +130,11 @@
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-1.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-1.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-1.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-1.jpg" alt="hotel">
 							</div>
 						</div>
 						<div class="hotelhit__body-item">
@@ -115,11 +143,11 @@
 									<div class="hotelhit__body-content-title">Алаколь резорт</div>
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-2.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-2.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-2.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-2.jpg" alt="hotel">
 							</div>
 						</div>
 						<div class="hotelhit__body-item">
@@ -128,11 +156,11 @@
 									<div class="hotelhit__body-content-title">Алаколь резорт</div>
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-3.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-3.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-1.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-1.jpg" alt="hotel">
 							</div>
 						</div>
 						<div class="hotelhit__body-item">
@@ -141,11 +169,11 @@
 									<div class="hotelhit__body-content-title">Алаколь резорт</div>
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-1.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-1.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-2.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-2.jpg" alt="hotel">
 							</div>
 						</div>
 						<div class="hotelhit__body-item">
@@ -154,11 +182,11 @@
 									<div class="hotelhit__body-content-title">Алаколь резорт</div>
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-2.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-2.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-1.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-1.jpg" alt="hotel">
 							</div>
 						</div>
 						<div class="hotelhit__body-item">
@@ -167,11 +195,11 @@
 									<div class="hotelhit__body-content-title">Алаколь резорт</div>
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-3.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-3.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-2.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-2.jpg" alt="hotel">
 							</div>
 						</div>
 						<div class="hotelhit__body-item">
@@ -180,11 +208,11 @@
 									<div class="hotelhit__body-content-title">Алаколь резорт</div>
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-1.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-1.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-1.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-1.jpg" alt="hotel">
 							</div>
 						</div>
 						<div class="hotelhit__body-item">
@@ -193,11 +221,11 @@
 									<div class="hotelhit__body-content-title">Алаколь резорт</div>
 									<a href="" class="hotelhit__body-content-buttom buttom">Подробнее</a>
 								</div>
-								<div class="hotelhit__body-content__image"><img src="@img/hotelhit/plank-2.svg" alt="hotel">
+								<div class="hotelhit__body-content__image"><img src="img/hotelhit/plank-2.svg" alt="hotel">
 								</div>
 							</div>
 							<div class="hotelhit__body-item__image">
-								<img src="@img/hotelhit/hotel-2.jpg" alt="hotel">
+								<img src="img/hotelhit/hotel-2.jpg" alt="hotel">
 							</div>
 						</div>
 					</div>
@@ -218,7 +246,7 @@
 						</div>
 
 						<div class="travel__images">
-							<img src="@img/travel-img.png" alt="travel">
+							<img src="img/travel-img.png" alt="travel">
 						</div>
 					</div>
 				</div>
@@ -234,168 +262,168 @@
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 						<div class="hotel__card">
 							<div class="hotel__card-content">
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 						<div class="hotel__card">
 							<div class="hotel__card-content">
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 						<div class="hotel__card">
 							<div class="hotel__card-content">
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 						<div class="hotel__card">
 							<div class="hotel__card-content">
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 						<div class="hotel__card">
 							<div class="hotel__card-content">
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 						<div class="hotel__card">
 							<div class="hotel__card-content">
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 						<div class="hotel__card">
 							<div class="hotel__card-content">
 								<div class="content-card-title">Алаколь Резорт</div>
 								<div class="content-card-list">
 									<div class="content-card-list-item">
-										<img src="@img/hotel/sun.png" alt="hotel">
+										<img src="img/hotel/sun.png" alt="hotel">
 										<div class="content-card-list-item-text">База отдыха, Пляжный</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/prise.png" alt="hotel">
+										<img src="img/hotel/prise.png" alt="hotel">
 										<div class="content-card-list-item-text">От 8000 тг/ночь</div>
 									</div>
 									<div class="content-card-list-item">
-										<img src="@img/hotel/map.png" alt="hotel">
+										<img src="img/hotel/map.png" alt="hotel">
 										<div class="content-card-list-item-text">Акши, Алматинская обл., Казахстан</div>
 									</div>
 								</div>
 								<a href="" class="buttom hotel__card-buttom">Подробнее</a>
 							</div>
-							<img src="@img/hotel/hotel-1.jpg" alt="hotel">
+							<img src="img/hotel/hotel-1.jpg" alt="hotel">
 						</div>
 
 					</div>
@@ -409,21 +437,21 @@
 					<div class="experience__body">
 						<div class="experience__card">
 							<div class="experience__card-content">
-								<img src="@img/fish.svg" alt="fish">
+								<img src="img/fish.svg" alt="fish">
 								<span class="experience__card-content-label">275</span>
 							</div>
 							<div class="experience__card-text">Отель вы посетили с нами</div>
 						</div>
 						<div class="experience__card">
 							<div class="experience__card-content">
-								<img src="@img/fish.svg" alt="fish">
+								<img src="img/fish.svg" alt="fish">
 								<span class="experience__card-content-label">1200</span>
 							</div>
 							<div class="experience__card-text">Туристов доверили нам свой отдых</div>
 						</div>
 						<div class="experience__card">
 							<div class="experience__card-content">
-								<img src="@img/fish.svg" alt="fish">
+								<img src="img/fish.svg" alt="fish">
 								<span class="experience__card-content-label">2500</span>
 							</div>
 							<div class="experience__card-text">Туров оформили для вас</div>
@@ -493,7 +521,7 @@
 								активизации.</p>
 						</div>
 						<div class="about__image">
-							<img src="@img/about-bg.png" alt="about">
+							<img src="img/about-bg.png" alt="about">
 						</div>
 					</div>
 				</div>
@@ -501,10 +529,32 @@
 
 
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__actions">
+						<a href="" class="footer__social social _icon-whatsapp"></a>
+						<a href="" class="footer__social social _icon-telegram"></a>
+						<a href="" class="footer__social social _icon-instagram"></a>
+					</div>
+					<a href="tel:+77055451833" class="footer__phone header__phone _icon-phone">+7 705 545 18 33</a>
+				</div>
+			</div>
+		</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220504140725"></script>
 </body>
 
 </html>

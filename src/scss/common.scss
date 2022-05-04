@@ -60,7 +60,6 @@
 	}
 }
 
-.page-title,
 .subtitlepage {
 	font-weight: 700;
 	@include adaptiveValue("font-size", 30, 22);
@@ -68,6 +67,25 @@
 	color: #313131;
 	@include adaptiveValue("padding-top", 40, 20);
 	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.cataloghotel-title {
+	font-weight: 700;
+	@include adaptiveValue("font-size", 30, 22);
+	line-height: math.div(37, 30);
+	color: #313131;
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
+}
+
+.page-title {
+	font-weight: 700;
+	@include adaptiveValue("font-size", 30, 22);
+	line-height: math.div(37, 30);
+	color: #313131;
+	@include adaptiveValue("padding-top", 40, 20);
+	padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .subtitlepage {}
