@@ -130,7 +130,7 @@
 // advantage ===========================================================================================
 .advantage {
 	background-color: $blueColor;
-	margin-top: -395px;
+	margin-top: -405px;
 
 	@media (max-width:$tablet) {
 		// margin-top: 0;
@@ -370,8 +370,7 @@
 // travel ========================================================================================================================================================
 
 .travel {
-	@include adaptiveValue("padding-top", 40, 40);
-	@include adaptiveValue("padding-bottom", 40, 40);
+	padding: 40px 0;
 	background: #78DDFF;
 
 	// .travel__container
@@ -487,7 +486,7 @@
 
 	// .hotel__title
 	&__title {
-		@include adaptiveValue("margin-bottom", 40, 20);
+		@include adaptiveValue("margin-bottom", 40, 30);
 	}
 
 	// .hotel__body
@@ -701,7 +700,7 @@
 	padding-top: 200px;
 
 	@media (max-width: em(1184)) {
-		padding-top: 80px;
+		padding-top: 60px;
 	}
 
 	// .tour__container

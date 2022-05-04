@@ -2,10 +2,6 @@
 	background-color: #fff;
 	margin-top: 100px;
 
-	@media (max-width:$tablet) {
-		// margin-top: 150px;
-	}
-
 	// .hotel__title
 	&__title {
 		color: $mainColor;
@@ -21,7 +17,7 @@
 	// .hotel__adress
 	&__adress {
 		font-weight: 400;
-		font-size: 15px;
+		@include adaptiveValue("font-size", 15, 14);
 		margin-left: 5px;
 	}
 
@@ -72,7 +68,8 @@
 
 		span {
 			font-weight: 500;
-			@include adaptiveValue("font-size", 20, 16);
+			@include adaptiveValue("font-size", 18, 14);
+			text-align: center;
 			line-height: math.div(24, 20);
 			position: relative;
 
@@ -172,6 +169,10 @@
 		grid-row-end: 2;
 		grid-column-end: 3;
 		margin-top: 30px;
+
+		@media (max-width:$tablet) {
+			margin-bottom: 30px;
+		}
 
 		@media (max-width: em(1073)) {
 			grid-template-rows: 1fr;

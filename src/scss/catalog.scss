@@ -96,6 +96,10 @@
 			background-color: rgba(49, 49, 49, 0.71);
 			bottom: 0px;
 			left: 0;
+
+			@media (max-width:$tablet) {
+				width: 30%;
+			}
 		}
 	}
 
@@ -113,6 +117,10 @@
 			background-color: rgba(49, 49, 49, 0.71);
 			bottom: 0px;
 			left: 0;
+
+			@media (max-width:$tablet) {
+				width: 30%;
+			}
 		}
 	}
 
@@ -204,7 +212,7 @@
 		margin-top: 20px;
 		padding: 14px 30px;
 		font-weight: 700;
-		font-size: 12px;
+		font-size: 14px;
 		text-align: center;
 	}
 }

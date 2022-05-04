@@ -919,8 +919,19 @@ textarea.input {
 
 .hotelpage__adress {
   font-weight: 400;
-  font-size: 15px;
   margin-left: 5px;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.853021978rem  +  0.1098901099vw , 0.9375rem )) {
+  .hotelpage__adress {
+    font-size: clamp( 0.875rem , 0.853021978rem  +  0.1098901099vw , 0.9375rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.853021978rem  +  0.1098901099vw , 0.9375rem )) {
+  .hotelpage__adress {
+    font-size: calc(0.875rem + 0.0625 * (100vw - 20rem) / 56.875);
+  }
 }
 
 .hotelpage__content {
@@ -986,19 +997,20 @@ textarea.input {
 
 .hotelpage__left-amenities span {
   font-weight: 500;
+  text-align: center;
   line-height: 1.2;
   position: relative;
 }
 
-@supports (font-size: clamp( 1rem , 0.9120879121rem  +  0.4395604396vw , 1.25rem )) {
+@supports (font-size: clamp( 0.875rem , 0.7870879121rem  +  0.4395604396vw , 1.125rem )) {
   .hotelpage__left-amenities span {
-    font-size: clamp( 1rem , 0.9120879121rem  +  0.4395604396vw , 1.25rem );
+    font-size: clamp( 0.875rem , 0.7870879121rem  +  0.4395604396vw , 1.125rem );
   }
 }
 
-@supports not (font-size: clamp( 1rem , 0.9120879121rem  +  0.4395604396vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.7870879121rem  +  0.4395604396vw , 1.125rem )) {
   .hotelpage__left-amenities span {
-    font-size: calc(1rem + 0.25 * (100vw - 20rem) / 56.875);
+    font-size: calc(0.875rem + 0.25 * (100vw - 20rem) / 56.875);
   }
 }
 
@@ -1507,7 +1519,7 @@ textarea.input {
   margin-top: 20px;
   padding: 14px 30px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -2265,7 +2277,7 @@ body::after {
 
 .advantage {
   background-color: #003976;
-  margin-top: -395px;
+  margin-top: -405px;
 }
 
 .advantage__body {
@@ -2550,31 +2562,8 @@ body::after {
 }
 
 .travel {
+  padding: 40px 0;
   background: #78DDFF;
-}
-
-@supports (padding-top: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
-  .travel {
-    padding-top: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem );
-  }
-}
-
-@supports not (padding-top: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
-  .travel {
-    padding-top: calc(2.5rem + 0 * (100vw - 20rem) / 56.875);
-  }
-}
-
-@supports (padding-bottom: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
-  .travel {
-    padding-bottom: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem );
-  }
-}
-
-@supports not (padding-bottom: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem )) {
-  .travel {
-    padding-bottom: calc(2.5rem + 0 * (100vw - 20rem) / 56.875);
-  }
 }
 
 .travel__body {
@@ -2716,15 +2705,15 @@ body::after {
   }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem )) {
+@supports (margin-bottom: clamp( 1.875rem , 1.6552197802rem  +  1.0989010989vw , 2.5rem )) {
   .hotel__title {
-    margin-bottom: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem );
+    margin-bottom: clamp( 1.875rem , 1.6552197802rem  +  1.0989010989vw , 2.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem )) {
+@supports not (margin-bottom: clamp( 1.875rem , 1.6552197802rem  +  1.0989010989vw , 2.5rem )) {
   .hotel__title {
-    margin-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 56.875);
+    margin-bottom: calc(1.875rem + 0.625 * (100vw - 20rem) / 56.875);
   }
 }
 
@@ -4981,7 +4970,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @media (max-width: 74em) {
   .tour {
-    padding-top: 80px;
+    padding-top: 60px;
   }
 
   .tour__container::before {
@@ -5043,6 +5032,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .hotelpage__left-advantage-item:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  .hotelpage__right {
+    margin-bottom: 30px;
   }
 
   .hotelpage__right-form {
@@ -5151,6 +5144,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     margin: 0 10px;
+  }
+
+  .cataloghotel__content-title::before {
+    width: 30%;
+  }
+
+  .cataloghotel__content-list::before {
+    width: 30%;
   }
 
   .header {
