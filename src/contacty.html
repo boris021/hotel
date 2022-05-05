@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{"title":"Наши контакты"})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="contact">
+				<img src="@img/contact/contact-bg.png" alt="contact">
+				<div class="contact__container">
+					<div class="contact__title">Контакты</div>
+					<div class="contact__body">
+						<div class="contact__body-content contact__content">
+							<div class="contact__content-text">Г. Алматы, просп. Кабанбай батыра, 22, 1</div>
+							<a href="" class="contact__content-link _icon-phone">+7 777 777-77-77</a>
+							<div class="contact__content-week">ПН-ВС: 10.00 — 22.00</div>
+							<div class="contact__content-map">
+								<script type="text/javascript" charset="utf-8" async
+									src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acad540f41e6f50aa091f0795f690590ae74cc0bd9d05f54b43cba9c6ca3cb55a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+								</script>
+							</div>
+						</div>
+					</div>
+					<div class="contact__block">
+						<div class="contact__block-text">
+							Наша команда всегда рада помочь Вам в организации вашего отдыха, мы на связи 24/7.
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
