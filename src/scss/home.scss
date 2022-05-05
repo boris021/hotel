@@ -127,6 +127,36 @@
 	}
 }
 
+.select {
+
+	// .select__body
+	&__body {
+		position: relative;
+		// border-radius: 10px;
+	}
+
+	&__value {
+		// height: 60px;
+		// border-radius: 10px;
+		color: #fff;
+
+		&::after {
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 7px solid $whiteColor;
+		}
+	}
+
+	&__title {
+		background-color: #4D75A0;
+		padding: 0 20px;
+		border-radius: 10px;
+		height: rem(60);
+		color: #fff !important;
+		box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	}
+}
+
 // advantage ===========================================================================================
 .advantage {
 	background-color: $blueColor;

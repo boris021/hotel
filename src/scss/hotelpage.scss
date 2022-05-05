@@ -202,6 +202,10 @@
 	&__subtitlepage {}
 }
 
+
+
+
+
 .form__body {
 	border: 1px solid $mainColor;
 	border-radius: 5px;
@@ -312,6 +316,29 @@
 }
 
 .form {}
+
+.group__form {
+	.select {
+		&__value {
+			color: $mainColor;
+
+			&::after {
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 7px solid $mainColor;
+			}
+		}
+
+		&__title {
+			background: transparent;
+			padding: 0 8px;
+			height: rem(42);
+			color: #fff !important;
+			box-shadow: none;
+		}
+	}
+}
+
 
 
 // галерея ========================================================================================================================================================
