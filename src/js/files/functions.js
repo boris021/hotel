@@ -1,5 +1,7 @@
 // Подключение списка активных модулей
-import { flsModules } from "./modules.js";
+import {
+	flsModules
+} from "./modules.js";
 
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
 export function isWebp() {
@@ -18,7 +20,26 @@ export function isWebp() {
 	});
 }
 /* Проверка мобильного браузера */
-export let isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+export let isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	}
+};
 /* Добавление класса touch для HTML если браузер мобильный */
 export function addTouchClass() {
 	// Добавление класса _touch для HTML если браузер мобильный
@@ -34,7 +55,9 @@ export function addLoadedClass() {
 }
 // Получение хеша в адресе сайта
 export function getHash() {
-	if (location.hash) { return location.hash.replace('#', ''); }
+	if (location.hash) {
+		return location.hash.replace('#', '');
+	}
 }
 // Указание хеша в адресе сайта
 export function setHash(hash) {
@@ -46,6 +69,7 @@ export function fullVHfix() {
 	const fullScreens = document.querySelectorAll('[data-fullscreen]');
 	if (fullScreens.length && isMobile.any()) {
 		window.addEventListener('resize', fixHeight);
+
 		function fixHeight() {
 			let vh = window.innerHeight * 0.01;
 			document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -233,6 +257,7 @@ export function spollers() {
 				});
 			}
 		}
+
 		function setSpollerAction(e) {
 			const el = e.target;
 			if (el.closest('[data-spoller]')) {
@@ -250,6 +275,7 @@ export function spollers() {
 				e.preventDefault();
 			}
 		}
+
 		function hideSpollersBody(spollersBlock) {
 			const spollerActiveTitle = spollersBlock.querySelector('[data-spoller]._spoller-active');
 			const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
@@ -355,10 +381,12 @@ export function tabs() {
 			});
 		}
 	}
+
 	function setTabsStatus(tabsBlock) {
 		let tabsTitles = tabsBlock.querySelectorAll('[data-tabs-title]');
 		let tabsContent = tabsBlock.querySelectorAll('[data-tabs-item]');
 		const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
+
 		function isTabsAnamate(tabsBlock) {
 			if (tabsBlock.hasAttribute('data-tabs-animate')) {
 				return tabsBlock.dataset.tabsAnimate > 0 ? Number(tabsBlock.dataset.tabsAnimate) : 500;
@@ -389,6 +417,7 @@ export function tabs() {
 			});
 		}
 	}
+
 	function setTabsAction(e) {
 		const el = e.target;
 		if (el.closest('[data-tabs-title]')) {
@@ -461,16 +490,19 @@ export function showMore() {
 				initItemsMedia(mdQueriesArray);
 			}
 		}
+
 		function initItemsMedia(mdQueriesArray) {
 			mdQueriesArray.forEach(mdQueriesItem => {
 				initItems(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
 			});
 		}
+
 		function initItems(showMoreBlocks, matchMedia) {
 			showMoreBlocks.forEach(showMoreBlock => {
 				initItem(showMoreBlock, matchMedia);
 			});
 		}
+
 		function initItem(showMoreBlock, matchMedia = false) {
 			showMoreBlock = matchMedia ? showMoreBlock.item : showMoreBlock;
 			let showMoreContent = showMoreBlock.querySelectorAll('[data-showmore-content]');
@@ -491,6 +523,7 @@ export function showMore() {
 				showMoreButton.hidden = true;
 			}
 		}
+
 		function getHeight(showMoreBlock, showMoreContent) {
 			let hiddenHeight = 0;
 			const showMoreType = showMoreBlock.dataset.showmore ? showMoreBlock.dataset.showmore : 'size';
@@ -508,6 +541,7 @@ export function showMore() {
 			}
 			return hiddenHeight;
 		}
+
 		function getOriginalHeight(showMoreContent) {
 			let parentHidden;
 			let hiddenHeight = showMoreContent.offsetHeight;
@@ -521,6 +555,7 @@ export function showMore() {
 			showMoreContent.style.height = `${hiddenHeight}px`;
 			return originalHeight;
 		}
+
 		function showMoreActions(e) {
 			const targetEvent = e.target;
 			const targetType = e.type;
