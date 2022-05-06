@@ -29,16 +29,17 @@
 			<section class="form">
 				<div class="form__container">
 					<div class="main__form">
-						<form action="" class="form-main">
+						<form data-dev data-popup-message="#popup" action="#" method="POST" class="form form-main">
 							<div class="main__group">
 								<label for="name" class="main__label">Ваше имя</label>
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ербол"
-									class="input main__input">
+								<input data-required id="name" autocomplete="off" type="text"
+									data-error="Вы не заполниле поле имя" placeholder="Ербол" class="input main__input">
 							</div>
 							<div class="main__group">
-								<label for="tel" class="main__label">Ваш телефон</label>
-								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
-									placeholder="+7 700 000 00 00" class="input main__input">
+								<label for="tel1" class="main__label">Ваш телефон</label>
+								<input data-required data-inputmask="'mask': '+7 (999) 999-9999'" id="tel1"
+									data-error="Вы не заполниле поле телефон" type="tel" placeholder="+7 700 000 00 00"
+									class="input main__input">
 							</div>
 							<div class="main__group">
 								<label for="date" class="main__label">Дата заезда</label>
@@ -59,8 +60,8 @@
 									<option value="4">4</option>
 								</select>
 							</div>
+							<button type="submit" class="button main__button">Оставить заявку</button>
 						</form>
-						<button type="submit" class="button main__button">Оставить заявку</button>
 					</div>
 				</div>
 			</section>

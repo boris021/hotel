@@ -2,7 +2,9 @@
 
 // Подключение функционала "Чертогов Фрилансера"
 // Подключение списка активных модулей
-import { flsModules } from "../modules.js";
+import {
+	flsModules
+} from "../modules.js";
 
 // Подключение модуля
 import "inputmask/dist/inputmask.min.js";
