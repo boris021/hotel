@@ -3,6 +3,7 @@
 	background-color: $blueColor;
 	position: relative;
 	height: rem(820);
+	// height: 100%;
 
 	@media (max-width:$tablet) {
 		height: 400px;
@@ -44,6 +45,7 @@
 
 	// .main__group
 	&__group {
+		position: relative;
 		min-width: 17%;
 		margin-bottom: 20px;
 		margin-right: 20px;
@@ -55,6 +57,7 @@
 		@media (max-width:$tablet) {
 			flex: 1 1 auto;
 			margin-right: 20px;
+			margin-bottom: 40px;
 
 			&:nth-child(2) {
 				margin-right: 0;
@@ -160,11 +163,12 @@
 // advantage ===========================================================================================
 .advantage {
 	background-color: $blueColor;
-	margin-top: -405px;
+	margin-top: -360px;
 
 	@media (max-width:$tablet) {
 		// margin-top: 0;
-		padding-top: 430px;
+		padding-top: 560px;
+		margin-top: -538px;
 	}
 
 	// .advantage__container

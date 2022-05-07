@@ -26,6 +26,15 @@ body::after {
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
+
+	&__text {
+		margin-bottom: 20px;
+	}
+
+	&__close {
+		font-size: 12px;
+		display: block;
+	}
 }
 
 .popup_show {
@@ -74,6 +83,10 @@ body::after {
 	font-weight: bold;
 	margin-bottom: 10px;
 	text-align: center;
+
+	@media (max-width:$tablet) {
+		margin-top: 20px;
+	}
 }
 
 .popup__send-text {
@@ -90,20 +103,24 @@ body::after {
 	flex-wrap: wrap;
 }
 
-.link-soc a {
+.link-soc {
 	background-color: #43d854;
 	border-radius: 30px;
-	padding: 10px 20px;
+	padding: 15px 30px;
 	display: flex;
 	align-items: center;
 	color: #fff;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 14px;
 	transition: all 0.3s ease 0s;
+
+	&::before {
+		display: inline-block;
+		margin-right: 10px;
+	}
 
 	@media (max-width:$mobile) {
 		margin-bottom: 15px;
-
 	}
 
 	&:hover {
@@ -117,11 +134,29 @@ body::after {
 	height: 20px;
 }
 
-.telegram a {
+.telegram {
 	background-color: #0088cc;
-	transition: all 0.3s ease 0s;
+	transition: background-color 0.3s ease 0s;
 
 	&:hover {
 		background-color: #015077;
+	}
+}
+
+.whatsapp {
+	background-color: #43d854;
+	transition: background-color 0.3s ease 0s;
+
+	&:hover {
+		background-color: #03d854;
+	}
+}
+
+.instagram {
+	background-color: #C13584;
+	transition: background-color 0.3s ease 0s;
+
+	&:hover {
+		background-color: #E1306C;
 	}
 }
