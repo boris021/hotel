@@ -290,8 +290,8 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 
-		@media (max-width:$mobile) {
-			justify-content: center;
+		@media (max-width:$tablet) {
+			// justify-content: center;
 		}
 	}
 
@@ -302,17 +302,23 @@
 		align-items: center;
 		flex-direction: column;
 		justify-content: flex-end;
-		flex: 0 0 rem(270);
-		min-height: 270px;
-		border-radius: 10px;
-		margin-bottom: 30px;
+		flex: 0 0 20%;
+		height: 270px;
+		border-radius: 5%;
+		margin-bottom: 40px;
 		margin-right: 20px;
 		box-shadow: 0px 4px 20px #78DDFF;
 		border-radius: 10px;
 		transition: box-shadow 0.3s ease 0s;
 
+		@media (max-width:$tablet) {
+			margin: 0 0px 30px 0px;
+			flex: 0 0 47%;
+			height: 270px;
+		}
+
 		@media (max-width:$mobile) {
-			margin: 0 10px 20px 0;
+			height: 200px;
 		}
 
 		&:hover {
@@ -327,7 +333,11 @@
 			left: 0;
 
 			img {
-				border-radius: 10px;
+				width: 100%;
+				height: 100%;
+				border-radius: 5%;
+				object-fit: cover;
+				object-position: top;
 			}
 		}
 	}
@@ -336,16 +346,34 @@
 	&__body-content {
 		position: relative;
 		width: 100%;
-		height: 104px;
+		height: 100px;
 
 		&__image {
 			content: '';
 			position: absolute;
 			width: 100%;
-			height: 104px;
 			bottom: 0;
 			left: 0;
 			z-index: 2;
+			height: 100px;
+			border-radius: 24% 24% 24% 24% / 25% 25% 0% 0%;
+
+			@media (max-width:$mobile) {
+				height: 90px;
+			}
+
+			&-1 {
+				background-color: #F4A300;
+			}
+
+			&-2 {
+				background-color: #E73C3E;
+			}
+
+			&-3 {
+				background-color: #4872F2;
+			}
+
 		}
 	}
 
@@ -354,6 +382,10 @@
 		position: relative;
 		z-index: 3;
 
+		@media (max-width:$mobile) {
+			top: 8px;
+		}
+
 		&::before {
 			content: '';
 			position: absolute;
@@ -361,8 +393,15 @@
 			height: 100%;
 			top: 0;
 			left: 0;
-			transform: translate(10px, 0);
-			background: url(../img/hotelhit/sun.png) left bottom no-repeat;
+			transform: translate(7px, 0);
+			background-image: url(../img/icon/sun.svg);
+			background-size: 40px;
+			background-repeat: no-repeat;
+			background-position: left bottom;
+
+			@media (max-width:$tablet) {
+				display: none;
+			}
 		}
 	}
 
@@ -370,11 +409,15 @@
 	&__body-content-title {
 		margin-top: 20px;
 		font-weight: 600;
-		font-size: 15px;
+		@include adaptiveValue("font-size", 15, 14);
 		line-height: math.div(18, 15);
 		text-align: center;
 		color: $whiteColor;
 		margin-bottom: 15px;
+
+		@media (max-width:$mobile) {
+			margin-bottom: 8px;
+		}
 	}
 
 	// .hotelhit__body-content-buttom

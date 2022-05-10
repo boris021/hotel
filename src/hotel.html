@@ -11,7 +11,7 @@
 				<div class="hotelpage__container">
 					<h2 class="hotelpage__title page-title">Алаколь Резорт</h2>
 					<div class="hotelpage__maps">
-						<img src="@img/hotel/map.png" alt="map">
+						<img src="@img/icon/map.svg" alt="map">
 						<span class="hotelpage__adress">Акши, Алматинская обл.,Казахстан</span>
 					</div>
 					<div data-gallery class="angry-grid">
@@ -58,73 +58,75 @@
 							<h3 class="hotelpage__subtitlepage subtitlepage">Какие удобства вас ждут</h3>
 							<div class="hotelpage__left-advantage">
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/wifi.png" alt="wifi">
+									<img src="@img/icon/wifi.svg" alt="wifi">
 									<span class="hotelpage__left-advantage-item-text">Wi-Fi</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/car.png" alt="car">
+									<img src="@img/icon/car.svg" alt="car">
 									<span class="hotelpage__left-advantage-item-text">Бесплатная парковка на территории</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/tv.png" alt="tv">
+									<img src="@img/icon/tv.svg" alt="tv">
 									<span class="hotelpage__left-advantage-item-text">Телевизор, кабельное ТВ</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/water.png" alt="water">
+									<img src="@img/icon/water.svg" alt="water">
 									<span class="hotelpage__left-advantage-item-text">Горячая вода в номере</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/fridge 1.png" alt="fridge">
+									<img src="@img/icon/refrigerator.svg" alt="refrigerator">
 									<span class="hotelpage__left-advantage-item-text">Холодильник</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/hair-dryer.png" alt="wifi">
+									<img src="@img/icon/hairdryer.svg" alt="hairdryer">
 									<span class="hotelpage__left-advantage-item-text">Фен</span>
 								</div>
 							</div>
 							<h3 class="hotelpage__subtitlepage subtitlepage">Важная информация</h3>
 							<div class="hotelpage__left-advantage">
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/clock.png" alt="clock">
+									<img src="@img/icon/clock.svg" alt="clock">
 									<span class="hotelpage__left-advantage-item-text">Прибытие в 12:00</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/clock.png" alt="clock">
+									<img src="@img/icon/clock.svg" alt="clock">
 									<span class="hotelpage__left-advantage-item-text">Выезд в 12:00</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/pawprint.png" alt="pawprint">
+									<img src="@img/icon/get.svg" alt="pawprint">
 									<span class="hotelpage__left-advantage-item-text">Нельзя с питомцами</span>
 								</div>
 								<div class="hotelpage__left-advantage-item">
-									<img src="@img/hotel/dont-smoke.png" alt="smoke">
+									<img src="@img/icon/smoking.svg" alt="smoke">
 									<span class="hotelpage__left-advantage-item-text">Курение в номере запрещено</span>
 								</div>
 
 							</div>
 						</div>
 						<div class="hotelpage__right">
-							<form action="" class="hotelpage__right-form">
+							<form data-ajax data-popup-message="#popup" action="sendmailhotel.php" method="POST"
+								class="hotelpage__right-form form">
 								<h3 class="hotelpage__subtitlepage subtitlepage">Алаколь Резорт</h3>
+								<input type="hidden" name="hidden" value="Название отеля"></p>
 								<div class="form__body">
 									<div class="group__form">
-										<label for="date" class="group__form-label">Прибытие</label>
-										<input type="date" data-error="Ошибка" class="input group__form-input">
+										<label for="datehotelon" class="group__form-label">Прибытие<span> *</span></label>
+										<input data-required type="date" name="datehotelon" class="input group__form-input">
 									</div>
 									<div class="group__form">
-										<label for="date" class="group__form-label">Выезд</label>
-										<input type="date" data-error="Ошибка" class="input group__form-input">
+										<label for="datehoteloff" class="group__form-label">Выезд<span> *</span></label>
+										<input data-required type="date" name="datehoteloff" class="input group__form-input">
 									</div>
 									<div class="group__form">
-										<label for="tel" class="group__form-label">Где вы будете спать</label>
-										<select name="form[]" class="form">
+										<label for="sleep" class="group__form-label">Где вы будете спать</label>
+										<select name="sleep" class="form">
 											<option value="1" selected>1 двуспальная кровать</option>
 											<option value="2">2 двухспальная кровать</option>
 										</select>
 									</div>
 									<div class="group__form">
-										<label for="number" class="group__form-label">Кол-во гостей</label>
-										<select name="form[]" class="form">
+										<label for="gust" class="group__form-label">Кол-во гостей</label>
+										<select name="gust" class="form">
 											<option value="1" selected>1</option>
 											<option value="2">2</option>
 											<option value="3">3</option>
@@ -132,31 +134,35 @@
 										</select>
 									</div>
 									<div class="group__form">
-										<label for="name" class="group__form-label">Имя</label>
-										<input type="name" data-error="Ошибка" placeholder="Ербол"
+										<label for="lastname" class="group__form-label">Имя<span> *</span></label>
+										<input data-required type="name" name="lastname" placeholder="Ербол"
 											class="input group__form-input">
 									</div>
 									<div class="group__form">
-										<label for="tel" class="group__form-label">Телефон</label>
-										<input type="tel" data-error="Ошибка" placeholder="+7 700 000 00 00"
-											class="input group__form-input">
+										<label for="tel" class="group__form-label">Телефон<span> *</span></label>
+										<input data-required name="tel" data-inputmask="'mask': '+7 (999) 999-9999'" type="tel"
+											placeholder="+7 700 000 00 00" class="input group__form-input">
 									</div>
+								</div>
+								<div class="hotelpage__right-start">
+									<span>*</span>
+									<p>поля обязательные для заполнения</p>
 								</div>
 								<div class="hotelpage__right-advanteger">
 									<div class="hotelpage__right-advanteger-item">
-										<img src="@img/hotel/sun.png" alt="">
+										<img src="@img/hotel/sun.svg" alt="">
 										<span class="hotelpage__right-advanteger-text">База отдыха, Пляжный</span>
 									</div>
 									<div class="hotelpage__right-advanteger-item">
-										<img src="@img/hotel/prise.png" alt="">
+										<img src="@img/hotel/prise.svg" alt="">
 										<span class="hotelpage__right-advanteger-text">От 8000 тг/ночь</span>
 									</div>
 									<div class="hotelpage__right-advanteger-item">
-										<img src="@img/hotel/map.png" alt="">
+										<img src="@img/hotel/map.svg" alt="">
 										<span class="hotelpage__right-advanteger-text">Акши, Алматинская обл.,Казахстан</span>
 									</div>
 								</div>
-								<a href="" class="hotelpage__button button">Забронировать</a>
+								<button type="submit" class="hotelpage__button button">Забронировать</button>
 							</form>
 						</div>
 					</div>

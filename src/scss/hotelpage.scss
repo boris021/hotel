@@ -12,6 +12,10 @@
 		display: flex;
 		align-items: center;
 		@include adaptiveValue("margin-bottom", 40, 20);
+
+		img {
+			width: rem(20);
+		}
 	}
 
 	// .hotel__adress
@@ -202,10 +206,6 @@
 	&__subtitlepage {}
 }
 
-
-
-
-
 .form__body {
 	border: 1px solid $mainColor;
 	border-radius: 5px;
@@ -220,6 +220,7 @@
 
 	// .group__form
 	&__form {
+		position: relative;
 		border-bottom: 1px solid $mainColor;
 		display: flex;
 		align-items: center;
@@ -249,6 +250,12 @@
 			font-size: 14px;
 			font-weight: 600;
 			padding: 10px 8px;
+		}
+
+		span {
+			color: red;
+			font-size: 16px;
+			font-weight: 600;
 		}
 	}
 
@@ -282,6 +289,10 @@
 		display: flex;
 		align-items: center;
 
+		img {
+			width: rem(25);
+		}
+
 		span {
 			margin-left: 10px;
 		}
@@ -295,7 +306,28 @@
 	&__right-advanteger-text {
 		font-weight: 500;
 		font-size: 16px;
+	}
 
+	&__right {
+		&-start {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			span {
+				color: red;
+				margin-right: 10px;
+				margin-left: 5px;
+			}
+
+			p {
+				font-size: 16px;
+				color: $mainColor;
+				font-weight: 400;
+				@include adaptiveValue("font-size", 14, 12);
+			}
+		}
 	}
 }
 
@@ -338,7 +370,6 @@
 		}
 	}
 }
-
 
 
 // галерея ========================================================================================================================================================
