@@ -63,7 +63,7 @@
 .subtitlepage {
 	font-weight: 700;
 	@include adaptiveValue("font-size", 24, 18);
-	line-height: math.div(37, 30);
+	line-height: math.div(30, 24);
 	color: #313131;
 	@include adaptiveValue("padding-top", 30, 15);
 	@include adaptiveValue("padding-bottom", 20, 15);
