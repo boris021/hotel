@@ -1,23 +1,43 @@
 .tabs {
+
 	// .tabs__navigation
 	&__navigation {
 		display: flex;
+		justify-content: space-between;
+
+		@media (max-width:$tablet) {
+			flex-direction: column;
+		}
 	}
+
 	// .tabs__title
 	&__title {
+		width: 100%;
 		border: 1px solid #eee;
 		padding: rem(10) rem(15);
 		border-radius: rem(5);
+		margin-right: 6px;
+		margin-bottom: 6px;
+		transition: all 0.3s ease 0s;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
 		&._tab-active {
-			border: 1px solid #000;
+			// border: 1px solid #000;
+			background-color: $yellowColor;
 		}
 	}
+
 	// .tabs__content
 	&__content {
-		border: 1px solid #eee;
+		border: 1px solid rgba(238, 238, 238, 0.187);
 		padding: rem(10) rem(15);
 	}
+
 	// .tabs__body
 	&__body {
+		margin-right: 20px;
 	}
 }
