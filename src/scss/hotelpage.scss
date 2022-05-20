@@ -60,6 +60,7 @@
 	// .hotel__left-amenities
 	&__left-amenities {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		margin-bottom: 0px;
 		position: relative;
@@ -81,6 +82,7 @@
 			text-align: center;
 			line-height: math.div(19, 14);
 			position: relative;
+			margin-bottom: 8px;
 
 			&:not(:last-child) {
 				margin-right: 10px;

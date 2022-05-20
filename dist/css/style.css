@@ -1093,6 +1093,8 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1116,6 +1118,7 @@ textarea.input {
   text-align: center;
   line-height: 1.3571428571;
   position: relative;
+  margin-bottom: 8px;
 }
 
 @supports (font-size: clamp( 0.75rem , 0.706043956rem  +  0.2197802198vw , 0.875rem )) {

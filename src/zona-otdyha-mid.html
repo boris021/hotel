@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{"title":"Зона отдыха МИД"})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_headerpage.html',{})
+		<main class="page">
+
+			<section class="hotelpage">
+				<div class="hotelpage__container">
+					<h2 class="hotelpage__title page-title">Зона отдыха МИД</h2>
+					<div class="hotelpage__maps">
+						<img src="@img/icon/map.svg" alt="map">
+						<span class="hotelpage__adress">Казахстан, оз. Алаколь, пос. Коктума,</span>
+					</div>
+
+					<div data-gallery class="gallery-hotel">
+						<a id="item-0" href="@img/hotel/zonaotdyhamid/01.jpg" class="gallery__image-hotel">
+							<img id="item-0" src="@img/hotel/zonaotdyhamid/01.jpg" class="gallery__preview-hotel">
+						</a>
+
+						<a id="item-1" href="@img/hotel/zonaotdyhamid/02.jpg" class="gallery__image-hotel">
+							<img id="item-1" src="@img/hotel/zonaotdyhamid/02.jpg" class="gallery__preview-hotel">
+						</a>
+
+						<a id="item-2" href="@img/hotel/zonaotdyhamid/03.jpg" class="gallery__image-hotel">
+							<img id="item-2" src="@img/hotel/zonaotdyhamid/03.jpg" class="gallery__preview-hotel">
+						</a>
+
+						<a id="item-3" href="@img/hotel/zonaotdyhamid/04.jpg" class="gallery__image-hotel">
+							<img id="item-3" src="@img/hotel/zonaotdyhamid/04.jpg" class="gallery__preview-hotel">
+						</a>
+
+						<a id="item-4" href="@img/hotel/zonaotdyhamid/05.jpg" class="gallery__image-hotel">
+							<img id="item-4" src="@img/hotel/zonaotdyhamid/05.jpg" class="gallery__preview-hotel">
+						</a>
+
+						<a id="item-4" href="@img/hotel/zonaotdyhamid/06.jpg" class="gallery__image-hotel">
+							<img id="item-4" src="@img/hotel/zonaotdyhamid/06.jpg" class="gallery__preview-hotel">
+						</a>
+
+						<a id="item-4" href="@img/hotel/zonaotdyhamid/07.jpg" class="gallery__image-hotel">
+							<img id="item-4" src="@img/hotel/zonaotdyhamid/07.jpg" class="gallery__preview-hotel">
+						</a>
+
+						<a id="item-4" href="@img/hotel/zonaotdyhamid/08.jpg" class="gallery__image-hotel">
+							<img id="item-4" src="@img/hotel/zonaotdyhamid/08.jpg" class="gallery__preview-hotel">
+						</a>
+
+					</div>
+
+					<div class="hotelpage__content">
+						<div class="hotelpage__left">
+							<h3 class="hotelpage__subtitlepage subtitlepage">Зона отдыха МИД</h3>
+							<div class="hotelpage__left-amenities">
+
+							</div>
+							<div class="hotelpage__left-text">
+								<p>
+									1. Общая информация.
+								</p>
+								<p>Зона отдыха «МИД» — территория, где сервис, чистота и порядок на первом месте! Ощутив на себе
+									гостеприимство, доброжелательность и внимание к каждому гостю, вы обязательно захотите
+									вернуться к нам снова. Наша команда стремится сделать ваш отдых на этом уникальном целебном
+									озере Алаколь максимально комфортным и приятным.</p>
+								<p>2. Расположение.</p>
+								<p>Зона отдыха «МИД» расположена на юго-западном побережье озера Алаколь не доезжая до
+									курортного поселка Коктума. «МИД» является ближайшей зоной от косы, которая пользуются особой
+									популярностью среди отдыхающих на этом берегу озера Алаколь.</p>
+								<p>3. Условия отдыха и питание</p>
+								<p>Жилой двухэтажный комплекс с красивой внутренней отделкой в современном дизайне, сияющий
+									чистотой. Уютные люкс номера со всеми удобствами 2-х, 3-х, 4-х местные. В каждом номере
+									кондиционер, телевизор, душ, туалет, горячая и холодная вода. Есть номера с красивейшим видом
+									из окна на озеро Алаколь. Цена 7000 тг. с человека с 3-разовым питанием. Кухня домашняя. Все
+									свежее и очень вкусное.</p>
+								<p>4. Дополнительные услуги и развлечения.</p>
+								<p>Готовим вкуснейшие блюда на заказ: шашлык, коктал и др.
+									Есть отдельная крытая площадка для дискотеки и вечернего отдыха.
+									На ближайшем пляже озера Алаколь доступны все водные развлечения: катание на банане, диване,
+									на байдарках, на мотодельтоплане и др.
+									Зона отдыха МИД - контактная информация, телефон, адрес, фото и карта проезда. Заказать
+									виртуальный 3d тур для объкта Зона отдыха МИД вы можете перейдя в раздел наши услугу.
+									Прочитать отзывы о Зона отдыха МИД, а также добавить свой отзыв Вы можете на станице ниже.
+
+								</p>
+							</div>
+						</div>
+
+						<div class="hotelpage__right">
+							<form data-ajax data-popup-message="#popup" action="sendmailhotel.php" method="POST"
+								class="hotelpage__right-form form">
+								<h3 class="hotelpage__subtitlepage subtitlepage">Зона отдыха МИД</h3>
+								<input type="hidden" name="hidden" value="Название отеля"></p>
+								<div class="form__body">
+									<div class="group__form">
+										<label for="datehotelon" class="group__form-label">Прибытие<span> *</span></label>
+										<input data-required type="date" name="datehotelon" class="input group__form-input">
+									</div>
+									<div class="group__form">
+										<label for="datehoteloff" class="group__form-label">Выезд<span> *</span></label>
+										<input data-required type="date" name="datehoteloff" class="input group__form-input">
+									</div>
+									<div class="group__form">
+										<label for="lastname" class="group__form-label">Имя<span> *</span></label>
+										<input data-required type="name" name="lastname" placeholder="Ербол"
+											class="input group__form-input">
+									</div>
+									<div class="group__form">
+										<label for="tel" class="group__form-label">Телефон<span> *</span></label>
+										<input data-required name="tel" data-inputmask="'mask': '+7 (999) 999-9999'" type="tel"
+											placeholder="+7 700 000 00 00" class="input group__form-input">
+									</div>
+								</div>
+								<div class="hotelpage__right-start">
+									<span>*</span>
+									<p>поля обязательные для заполнения</p>
+								</div>
+								<div class="hotelpage__right-advanteger">
+									<div class="hotelpage__right-advanteger-item">
+										<img src="@img/icon/sun.svg" alt="">
+										<span class="hotelpage__right-advanteger-text">Зона отдыха МИД</span>
+									</div>
+									<div class="hotelpage__right-advanteger-item">
+										<img src="@img/icon/prise.svg" alt="">
+										<span class="hotelpage__right-advanteger-text">От <strong>25 000 тг/ночь</strong>
+										</span>
+									</div>
+									<div class="hotelpage__right-advanteger-item">
+										<img src="@img/icon/map.svg" alt="">
+										<span class="hotelpage__right-advanteger-text">Казахстан, оз. Алаколь, пос.
+											Коктума,</span>
+									</div>
+								</div>
+								<button type="submit" class="hotelpage__button button">Забронировать</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="tableprise">
+				<div class="table__container">
+					<h3 class="hotelpage__subtitlepage subtitlepage">Цены в тенге</h3>
+					<div class="mobile-table">
+
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
