@@ -85,7 +85,12 @@
 		&::before {
 			margin-right: 8px;
 			font-size: 16px;
+		}
 
+		&-two {
+			@media (max-width:$tablet) {
+				display: none;
+			}
 		}
 	}
 }

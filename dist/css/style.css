@@ -5422,6 +5422,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding: 25px 0;
   }
 
+  .header__phone-two {
+    display: none;
+  }
+
   .menu__body {
     position: fixed;
     width: 100%;
