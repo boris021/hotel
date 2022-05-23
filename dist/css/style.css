@@ -1554,12 +1554,12 @@ table.iksweb th {
   font-weight: 500;
   font-size: 14px;
   color: #ffffff;
-  background-color: #354251;
+  background-color: #313131;
 }
 
 table.iksweb td {
-  font-size: 13px;
-  color: #354251;
+  font-size: 14px;
+  color: #000;
 }
 
 table.iksweb td,

@@ -82,8 +82,8 @@
 							<form data-ajax data-popup-message="#popup" action="sendmailhotel.php" method="POST"
 								class="hotelpage__right-form form">
 								<h3 class="hotelpage__subtitlepage subtitlepage">Центр Семейного Отдыха "Фаворит"</h3>
-								<input type="hidden" name="hidden" value="Название отеля"></p>
-								<div class="form__body">
+								<input type="hidden" name="hidden" value="Центр Семейного Отдыха Фаворит"></p>
+								<div class=" form__body">
 									<div class="group__form">
 										<label for="datehotelon" class="group__form-label">Прибытие<span> *</span></label>
 										<input data-required type="date" name="datehotelon" class="input group__form-input">
@@ -130,7 +130,7 @@
 									</div>
 									<div class="hotelpage__right-advanteger-item">
 										<img src="@img/icon/prise.svg" alt="">
-										<span class="hotelpage__right-advanteger-text">От <strong>25 000 тг/ночь</strong>
+										<span class="hotelpage__right-advanteger-text">От <strong> 35 000 тг/ночь</strong>
 										</span>
 									</div>
 									<div class="hotelpage__right-advanteger-item">
@@ -149,7 +149,7 @@
 				<div class="table__container">
 					<h3 class="hotelpage__subtitlepage subtitlepage">Цены в тенге</h3>
 					<div class="mobile-table">
-
+						@@include('html/prise/_favorit.html',{})
 					</div>
 				</div>
 			</section>
