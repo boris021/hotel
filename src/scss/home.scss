@@ -608,7 +608,6 @@
 			content: '';
 			position: absolute;
 			width: 100%;
-			height: 100%;
 			top: 0;
 			left: 0;
 			border-radius: 10px;
@@ -653,6 +652,7 @@
 		clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
 		border-radius: 10px;
 		padding-top: 25px;
+		width: 100%;
 	}
 }
 
